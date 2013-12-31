@@ -52,7 +52,7 @@ NSDictionary* emojiMap() {
         @"😓": @":sweat:",
         @"😩": @":weary:",
         @"😔": @":pensive:",
-        @"😞": @":dissapointed:",
+        @"😞": @":disappointed:",
         @"😖": @":confounded:",
         @"😨": @":fearful:",
         @"😰": @":cold_sweat:",
