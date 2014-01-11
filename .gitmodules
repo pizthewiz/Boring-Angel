@@ -1,0 +1,3 @@
+[submodule "Generator/vendor/NSStringEmojize"]
+	path = Generator/vendor/NSStringEmojize
+	url = https://github.com/pizthewiz/NSStringEmojize.git

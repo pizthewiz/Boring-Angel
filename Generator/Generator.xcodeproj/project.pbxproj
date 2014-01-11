@@ -10,6 +10,7 @@
 		D8BF695E1863A2AF00C8E6B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8BF695D1863A2AF00C8E6B9 /* Foundation.framework */; };
 		D8BF69611863A2AF00C8E6B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BF69601863A2AF00C8E6B9 /* main.m */; };
 		D8BF69651863A2AF00C8E6B9 /* Generator.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D8BF69641863A2AF00C8E6B9 /* Generator.1 */; };
+		D8F30FAB1880F3BF00758FD2 /* NSString+Emojize.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F30FAA1880F3BF00758FD2 /* NSString+Emojize.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,9 @@
 		D8BF69601863A2AF00C8E6B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D8BF69631863A2AF00C8E6B9 /* Generator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Generator-Prefix.pch"; sourceTree = "<group>"; };
 		D8BF69641863A2AF00C8E6B9 /* Generator.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Generator.1; sourceTree = "<group>"; };
+		D8F30FA81880F3BF00758FD2 /* emojis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = emojis.h; sourceTree = "<group>"; };
+		D8F30FA91880F3BF00758FD2 /* NSString+Emojize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emojize.h"; sourceTree = "<group>"; };
+		D8F30FAA1880F3BF00758FD2 /* NSString+Emojize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emojize.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 			children = (
 				D8BF69601863A2AF00C8E6B9 /* main.m */,
 				D8BF69641863A2AF00C8E6B9 /* Generator.1 */,
+				D8F30FA61880F39C00758FD2 /* Vendor */,
 				D8BF69621863A2AF00C8E6B9 /* Supporting Files */,
 			);
 			path = Generator;
@@ -87,6 +92,25 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		D8F30FA61880F39C00758FD2 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				D8F30FA71880F3BF00758FD2 /* NSStringEmojize */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		D8F30FA71880F3BF00758FD2 /* NSStringEmojize */ = {
+			isa = PBXGroup;
+			children = (
+				D8F30FA81880F3BF00758FD2 /* emojis.h */,
+				D8F30FA91880F3BF00758FD2 /* NSString+Emojize.h */,
+				D8F30FAA1880F3BF00758FD2 /* NSString+Emojize.m */,
+			);
+			name = NSStringEmojize;
+			path = vendor/NSStringEmojize/NSStringEmojize;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -140,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8BF69611863A2AF00C8E6B9 /* main.m in Sources */,
+				D8F30FAB1880F3BF00758FD2 /* NSString+Emojize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
